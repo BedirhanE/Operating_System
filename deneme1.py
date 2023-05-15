@@ -1,6 +1,7 @@
 import time
 import threading
 
+#using Thhreads
 class PhoneStation:
     def __init__(self):
         self.lady1 = threading.Lock()
