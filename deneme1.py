@@ -48,12 +48,12 @@ class PhoneStation:
                 else:
                     self.lady2.release()
             else:
-                time.sleep(1)  # Waiting for a lady to become available
+                time.sleep(1)  # Waiting for a lady to become available.
 
 
 station = PhoneStation()
 
-# Simulating the phone calls from side A to side B
+# Simulating the phone calls from side A to side B.
 threads = []
 for friend in range(1, 7):
     for _ in range(6):
@@ -61,12 +61,14 @@ for friend in range(1, 7):
         threads.append(thread)
         thread.start()
 
-# Wait for all threads to complete
+# Wait for all threads to complete.
 for thread in threads:
     thread.join()
 
-# Checking if all calls are completed
+# Checking if all calls are completed.
 if station.calls_completed == 36:
     print("All phone calls have been completed.")
 else:
     print("Some phone calls were not completed.")
+
+print("-----------------The Program is Finished----------------")
