@@ -25,7 +25,7 @@ class PhoneStation:
 
 
 
-    # Arama gerçekleştirme işlemini simüle etmek için kullanılır.
+    #Arama gerçekleştirme işlemini simüle etmek için kullanılır.
     def _make_call(self, friend, line, lady):
         print(f"Friend {friend} is talking on {line} with {lady}")
         time.sleep(1)  # Simulating the duration of the phone call.
