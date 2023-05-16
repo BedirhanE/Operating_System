@@ -20,7 +20,7 @@ class PhoneStation:
 
     def _make_call(self, friend, line, lady):
         print(f"Friend {friend} is talking on {line} with {lady}")
-        time.sleep(1)  # Simulating the duration of the phone call
+        time.sleep(1)  # Simulating the duration of the phone call.
         print(f"Friend {friend} has finished the call")
         self.calls_completed += 1
         self._release_line(line, lady)
@@ -33,7 +33,7 @@ class PhoneStation:
             self.line2.release()
             self.lady2.release()
 
-    def _wait_and_call(self, friend):
+    def _wait_and_call(self, friend):#wait operation opject.
         while True:
             if self.lady1.acquire(blocking=False):
                 if self.line1.acquire(blocking=False):
