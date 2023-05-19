@@ -46,7 +46,7 @@ class PhoneStation:
 
 
 
-    # Bekleme işlemi gerçekleştirilir
+    # Bekleme işlemi gerçekleştirilir.
     def _wait_and_call(self, friend):#wait operation opject.
         while True:
             if self.lady1.acquire(blocking=False):
